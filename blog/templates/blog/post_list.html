@@ -4,20 +4,21 @@
         <title>Blog de Natacha</title>
     </head>
     <body>
-        <div>
+       
+      <div>
             <h1><a href="">Blog de Natacha</a></h1>
         </div>
-
+     {% for post in posts %}
+      <div>
+        <p>publié: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+     {% endfor %} 
         <div>
-            <p>published: 20.10.2018, 17:14</p>
-            <h2><a href="">Mon premier post</a></h2>
-            <p>Aujourd'hui, je participe à l'atelier Django Girls. </br>Ca se déroule à thecamp.</br>C'est très sympa.</p>
-        </div>
-
-        <div>
-            <p>published: 20.10.2018, 17:14</p>
-            <h2><a href="">Mon second post</a></h2>
-            <p>J'ai appris à faire des petits bouts de code en Python.</br>Puis, j'ai installé Django sur Pythonanywhere.</br>Etc. etc.</p>
+           {% for post in posts %}
+    			{{ post }}
+		   {% endfor %}
         </div>
     </body>
 </html>
