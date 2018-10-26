@@ -3,8 +3,8 @@
 {% block content %}
     <div class="post">
 
-        
-        
+
+
 <h1>{{ post.title }}</h1>
         {% if post.published_date %}
             <div class="date">
@@ -12,9 +12,10 @@
             </div>
         {% endif %}
 
-<div class="button">
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-</div>
-        <p>{{ post.text|linebreaksbr }}</p>
+
+    <p>{{ post.text|linebreaksbr }}</p>
+    <div class="button">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
     </div>
 {% endblock %}

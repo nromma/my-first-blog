@@ -4,7 +4,7 @@ h1 a {
 }
 body {
     padding-left: 0px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .page-header {
     background-color: #ff9400;
@@ -20,8 +20,8 @@ body {
 
 .content {
     margin-left: 40px;
-    
-    color: #ffffff;
+
+    color: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -63,12 +63,10 @@ color:#000000;
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #ffffff;
+    color: #000000;
 }
 
 /*input[type="text"], textarea {
 background-color : #000000;
 color: #000000;
 }*/
-
-
